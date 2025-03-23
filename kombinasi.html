@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Matdis</title>
+    <link rel="stylesheet" href="kombinasi.css">
+</head>
+<body style="background: rgb(171, 199, 237);">
+    
+    <!-- Logo atau nama brand -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/LOGO-UNRI.png/238px-LOGO-UNRI.png" class="img">
+            <h4>SISTEM INFORMASI</h4>
+        </a>
+    </nav>
+
+    <!-- Tombol kombinatorik -->
+    <div class="btn-kombinasi"> 
+        <a href="home.html" class="button">KOMBINASI</a>
+    </div>
+    
+    <!-- isi materi -->
+    <div class="isi">
+        <div style=" width: 80%; margin-top: -3% ; margin-left: 30px; font-size: 14px;">
+          <h1>A. Pengertian Kombinasi</h1> 
+        <p>Bentuk khusus dari permutasi adalah kombinasi. 
+    Jika pada permutasi urutan kemunculan diperhitungkan, maka pada kombinasi, 
+    urutan kemunculan diabaikan. Terkadang kita juga perlu menghitung banyaknya 
+    cara pengaturan objek tertentu tanpa memperhatikan urutannya. seperti penjelasan berikut:
+            </p>
+            <h1>B. Penjelasan</h1> 
+        </div>
+    </div>
+
+   <!-- kotak biru -->
+    <div class="materi1">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 50%;">
+                <h3 style="position: relative; top: 10px;">1. Bentuk kombinasi</h3>
+                    <p>perbedaan dari kombinasi dan permutasi terletak dari memperhatikan urutannya. dan kombinasi tidak perlu memerhatikan urutannya seperti penjelasan berikut :</p>
+                    <img src="foto_kombinasi/6.png" style="width: 40%; display: block; margin-left: 5%; margin-right: 0;">
+
+                        <p>Pembuktian dilakukan dengan menghitung permutasi dari n unsur yang berbeda dengan cara berikut ini </p>
+                        
+                        <ul>
+                            <li>Langkah pertama adalah menghitung kombinasi-r dari n, yaitu C(n, r). </li>
+                            <li>Langkah kedua adalah mengurutkan r unsur tersebut.</li>
+                        </ul>
+                       
+            </div>
+
+            <div style="width: 47%;">
+                 <h3 style="position: relative; top: 10px;">Rumus kombinasi</h3>
+                    <p>Misalkan n dan k bilangan bulat non negatif dengan k kurang sama dengan n. Banyaknya kombinasi k unsur dari n unsur
+                        berbeda tanpa pengulangan ditentukan dengan :</p>
+                    <img src="foto_kombinasi/desgin2.png" style="width: 60%; display: block; margin-left: 5%; margin-right: 0;">
+                        <h4>keterangan:</h4>
+                        <ul>
+                            <li>n =  jumlah objek yang bisa dipilih</li>
+                            <li>r =  jumlah yang harus dipilih</li>
+                        </ul>
+            </div>
+        </div>
+     </div>
+
+    
+     <div class="materi2">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            
+
+                    <div style="width: 50%;">
+                        <h4>Contoh soal :</h4>
+                        <p> Seorang penulis memiliki 8 cerita pendek yang berbeda. Berapa banyak cara ia dapat memilih 3 cerita untuk dibuatkan buku?</p>
+                         <img src="foto_kombinasi/7.png" style="width: 50%; display: block; margin-left: 5%; margin-right: 0;">
+                        <h4>Jawab:</h4>
+                        <p>diketahui</p>
+                        <ul>
+                            <li>nilai n = 8</li>
+                            <li>nilai r = 3</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 48%;">
+                        <h4>maka</h4>
+                        <img src="foto_kombinasi/zx.png" style="width: 60%; display: block; margin-left: 5%; margin-right: 0;">
+                        <p>maka cara yang dapat dilakukan penulis untuk memilih 3 diantara 8 cerita adalah sebanyak 56 cara</p>
+                    </div>      
+        </div>
+    </div>
+
+    <div class="materi3">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 50%;">
+                <h3 style="position: relative; top: 10px;">2. Ekspansi Binomial</h3>
+                    <p>Penjabaran Binomial Newton berbentuk (a + b) berpangkat n, koefisien variabelnya dapat bersandarkan
+                        pada Segitiga Pascal atau konsep kombinasi.</p>
+                        <img src="foto_kombinasi/PascalTriangleAnimated2.gif" style="width: 30%; display: block; margin-left: 5%; margin-right: 0;">
+                        <p>maka dapat dinotasikan sebagai berikut</p>
+                        <img src="foto_kombinasi/3.png" style="width: 100%; display: block; margin-left: 5%; margin-right: 0;">
+                        
+            </div>
+
+            <div style="width: 46%">
+                <h4>contoh:</h4>
+                <img src="foto_kombinasi/soal.png" style="width: 90%; display: block; margin-left: 5%; margin-right: 0;">
+                <h4>jawab</h4>
+                <p>diketahui a=2x      b=1      n=3 </p>
+                <img src="foto_kombinasi/jawabanbino.png" style="width: 90%; display: block; margin-left: 5%; margin-right: 0;">      
+            </div>
+        </div> 
+    </div>
+<!-- Contoh Kasus -->
+    <div class="materi3">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 50%;">
+            <h1>Contoh Kasus kombinasi</h1>
+            <p>Alif dan teman-temannya ingin mendaftar ke Universitas Riau melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) dan Seleksi Nasional Berdasarkan Tes (SNBT). Sekolah mereka memiliki kuota terbatas untuk merekomendasikan siswa melalui jalur SNBP, sehingga harus memilih siswa yang memiliki prestasi akademik terbaik. Terdapat 10 siswa yang berminat mengikuti jalur SNBP, tetapi sekolah hanya dapat merekomendasikan 5 siswa saja. Dan dari 5 siswa yang direkomendasikan untuk SNBP, 3 siswa juga boleh mengikuti SNBT, sedangkan sisanya hanya bisa mengandalkan SNBP.</p>
+              <div style="width: 50%;Margin-LEFT:10%;">
+                <img src="foto_kombinasi/Image SNBP dan SNBT.jpg"
+                  alt="Hero" width="70%">
+              </div>
+           
+            <p>Berdasarkan informasi tersebut, tentukan:
+              <ul>
+                  <li>a. Berapa cara sekolah untuk dapat memilih 5 siswa dari 10 orang siswa untuk direkomendasikan melalui jalur SNBP?</li>
+                  <li> b. Dari 5 siswa yang sudah terpilih SNBP, berapa cara memilih 3 siswa yang juga dapat mengikuti SNBT?</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+    
+        <!-- penyelesaian a -->
+        <div class="penyelesaian-a">
+          <div style="width: 1; margin-top: 100; padding: 50;">
+              <h3>Penyelesaian:</h3>
+              <img src="foto_kombinasi/1.jpg" width="300px" >
+              <p>Jadi, ada 252 cara sekolah untuk memilih 5 dari 10 siswa yang bisa direkomendasikan melalui jalur SNBP.</p>
+            </div>     
+        </div> 
+        
+        <!-- penyelesaian b -->
+     <div class="penyelesaian-b">
+      <div style="width: 1; margin-top: 100; padding: 50;">
+        <img src="foto_kombinasi/22.jpg" width="300px">
+        <p>Jadi, ada 10 cara untuk memilih 3 dari 5 siswa SNBP yang juga bisa mengikuti SNBT.</p>
+    </div>
+ </div>
+</div>
+   
+<!-- Footer -->
+ <footer class="footer">
+    ©Copyright Kelompok Duwa
+</footer>
+
+</body>  
+</html>

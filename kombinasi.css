@@ -1,0 +1,142 @@
+body {
+    margin: 0px;
+  }
+  
+  .navbar {
+    align-items: center;
+    background-color: #817b7baf;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+  }
+  
+  .navbar-logo img {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem; 
+  }
+  
+  .navbar-logo h4 {
+    float: left;
+    display: block;
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1; 
+  }
+  
+  
+  .navbar a :hover {
+    color: #575757;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .container {
+    padding: 3%;
+  }
+  
+  .isi{
+    font-size: 20px;
+  }
+  .materi1{
+   background: #73a0d0;
+    width: 85%;
+    padding: 5px 20px; 
+    border-radius: 20px;
+    margin: 5px auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .materi2{
+      background: #73a0d0;
+    width: 85%;
+    padding: 5px 20px; 
+    border-radius: 20px;
+    margin: 5px auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .materi3{
+   background: #73a0d0;
+    width: 85%;
+    padding: 5px 20px; 
+    border-radius: 20px;
+    margin: 5px auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .isi{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 3px 20px;
+    border-radius: 10px;
+  }
+  
+  .coso{
+    justify-self: center;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 20px;
+    
+  }
+  
+  .btn-kombinasi{
+    padding: 10px;
+    color: rgb(23, 41, 53);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    background: #73a0d0;
+    margin-bottom: 50px;
+    position: relative;
+    left: 15px; 
+    top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+   
+  }
+  
+  .button {
+    color: black;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    -moz-text-decoration-line: none;
+  }
+  
+  .footer {
+      background-color: #817b7baf;
+      color: aliceblue;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+  }

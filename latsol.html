@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilihan Cerita</title>
+    <link rel="stylesheet" href="latsol.css">
+</head>
+<body style="background: rgb(171, 199, 237);">
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/LOGO-UNRI.png/238px-LOGO-UNRI.png" alt="Avatar">
+            <h4>SISTEM INFORMASI</h4>
+        </a>
+    </nav>
+
+    <div class="kotak-soal">
+        <div class="container" id="questionContainer">
+
+            <!-- Soal 1 -->
+            <div class="question" id="question1">
+                <h2>LETS PLAY THIS GAME!!!</h2>
+                <p>Seorang penulis memiliki <b>8 cerita pendek</b>. Berapa banyak cara ia dapat memilih <b>3 cerita</b> untuk dibuatkan buku?</p>
+                <div class="hopper">📖</div>
+                <form>
+                    <div class="option-box" onclick="pilihJawaban(56, this, 1)">56</div>
+                    <div class="option-box" onclick="pilihJawaban(20, this, 1)">20</div>
+                    <div class="option-box" onclick="pilihJawaban(30, this, 1)">30</div>
+                    <div class="option-box" onclick="pilihJawaban(50, this, 1)">50</div>
+                </form>
+            </div>
+
+            <!-- Soal 2 -->
+            <div class="question" id="question2" style="display: none;">
+                <h2>Pilih Jawaban Permutasi</h2>
+                <p>Seorang pengurus acara memiliki <b>6 nama pembicara</b>. Ia harus memilih dan menyusun <b>4 nama</b> dalam urutan tertentu. Berapa banyak susunan berbeda yang dapat dibuat?</p>
+                <div class="hopper">🎤</div>
+                <form>
+                    <div class="option-box" onclick="pilihJawaban(720, this, 2)">720</div>
+                    <div class="option-box" onclick="pilihJawaban(360, this, 2)">360</div>
+                    <div class="option-box" onclick="pilihJawaban(480, this, 2)">480</div>
+                    <div class="option-box" onclick="pilihJawaban(600, this, 2)">600</div>
+                </form>
+            </div>
+
+            <!-- Soal 3 -->
+            <div class="question" id="question3" style="display: none;">
+                <h2>Pilih Kombinasi</h2>
+                <p>Seorang chef memiliki <b>10 bahan masakan</b>. Ia ingin memilih <b>3 bahan</b> tanpa memperhatikan urutan. Berapa banyak cara kombinasi bahan yang dapat dipilih?</p>
+                <div class="hopper">🍳</div>
+                <form>
+                    <div class="option-box" onclick="pilihJawaban(120, this, 3)">120</div>
+                    <div class="option-box" onclick="pilihJawaban(150, this, 3)">150</div>
+                    <div class="option-box" onclick="pilihJawaban(100, this, 3)">100</div>
+                    <div class="option-box" onclick="pilihJawaban(180, this, 3)">180</div>
+                </form>
+            </div>
+
+            <!-- Soal 4 -->
+            <div class="question" id="question4" style="display: none;">
+                <h2>Soal Statistik</h2>
+                <p>Dalam sebuah lomba, terdapat <b>10 peserta</b>. Berapa banyak cara untuk memilih juara <b>1, 2, dan 3</b> dalam urutan tertentu?</p>
+                <div class="hopper">🏆</div>
+                <form>
+                    <div class="option-box" onclick="pilihJawaban(720, this, 4)">720</div>
+                    <div class="option-box" onclick="pilihJawaban(504, this, 4)">504</div>
+                    <div class="option-box" onclick="pilihJawaban(120, this, 4)">120</div>
+                    <div class="option-box" onclick="pilihJawaban(3024, this, 4)">3024</div>
+                </form>
+            </div>
+
+            <!-- Hasil Akhir -->
+            <div class="final-result" id="finalResult" style="display: none;">
+                <h2>Hasil Akhir</h2>
+                <p id="scoreDisplay"></p>
+                <ul id="questionFeedback"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>

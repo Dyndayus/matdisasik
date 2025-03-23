@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Mathdis</title>
+    <link rel="stylesheet" href="permutasi.css">
+
+</head>
+<body style="background: rgb(171, 199, 237);">
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/LOGO-UNRI.png/238px-LOGO-UNRI.png" alt="Avatar">
+            <h4>SISTEM INFORMASI</h4>
+        </a>
+    </nav>
+
+        <nav>
+        <div class="container">
+            <a href="home.html" class="btn">PERMUTASI</a>
+        </div>
+
+            <div class="materi">
+                <div style="width:60%; margin-top: -8%; margin-left: 80px;">
+                    <h1>A. Pengertian Permutasi</h1>
+                    <p>Permutasi adalah banyaknya cara menyusun suatu unsur dengan memperhatikan urutannya. 
+                        Oleh karena memperhatikan urutan, maka posisi unsur tidak bisa dibalik atau ditukarkan.</p>
+                </div>
+            </div>
+
+            <div class="materi">
+                <div style="width:60%; margin-bottom: 1%; margin-left: 80px;">
+                    <h1>B. Jenis-jenis Permutasi</h1>
+                    <p>Berdasarkan unsur penyusunnya, permutasi dibagi ke dalam 4 jenis, yakni permutasi semua unsur, 
+                        permutasi sebagian unsur, permutasi unsur yang sama, dan permutasi siklis.</p>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <h3 style="position: relative; top: 10px;">1. Permutasi Semua Unsur</h3>
+                        <p>Permutasi semua unsur adalah cara menyusun seluruh unsur yang tersedia dalam berbagai urutan yang mungkin. </p>
+                        <h4>Dengan Rumus:</h4>
+                        <img src="foto_permutasi/semua.png" style="width: 50%; display: block; margin-left: 5%; margin-right: 0;">
+                        <h4>keterangan:</h4>
+                        <ul>
+                            <li>n = jumlah total unsur yang akan disusun</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 45%;">
+                        <h4>Contoh:</h4>
+                        <p>ada beberapa huruf {A, B, C, D}, dan kita ingin menyusun semua huruf tersebut dalam berbagai urutan yang mungkin..</p>
+                        <h4>Jawab:</h4>
+                        <ul>
+                            <li>P(n,n) = n!</li>
+                            <li>n = 4</li>
+                        </ul>
+                        <p>P(4,4) = 4!</p>
+                        <p>= 4 x 3 x 2 x 1</p>
+                        <p>= 24</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <h3 style="position: relative; top: 10px;">2.Permutasi sebagian Unsur</h3>
+                        <p>Permutasi sebagian unsur adalah cara menyusun sebagian dari total unsur yang tersedia, dengan memperhatikan urutan. 
+                        Artinya, kita hanya memilih r unsur dari n total unsur yang tersedia, dan menyusunnya dalam urutan yang berbeda.</p>
+                        <h4>Dengan Rumus:</h4>
+                        <img src="foto_permutasi/sebagian.png" style="width: 50%; display: block; margin-left: 5%; margin-right: 0;">
+                        <h4>Keterangan:</h4>
+                        <ul>
+                            <li>n = jumlah total unsur </li>
+                            <li>r = jumlah unsur yang dipilih dan disusun</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 45%;" >
+                        <h4>Contoh:</h4>
+                        <p>Berapa banyak cara untuk memilih ketua dan wakil ketua dari 5 orang?</p>
+                        <h4>Jawab:</h4>
+                        <ul>
+                            <li>P(n,r)! = n! : (n - r)!</li>
+                            <li> n = 5</li>
+                            <li> r = 2</li>
+                        </ul>
+                        <p>P(5,2)! = 5! : (5 - 2)!
+                        <p>= 5! : 3!</p>
+                        <p>= 5 x 4 x 3! : 3! </p>
+                        <p>= 5 x 4 </p>
+                        <p>= 20 </p>
+
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="hero">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <h3 style="position: relative; top: 10px;">3. Permutasi dengan Unsur yang sama</h3>
+                        <p>Permutasi dengan unsur yang sama digunakan ketika kita menyusun n unsur, 
+                            tetapi ada beberapa unsur yang identik (sama).</p>
+                        <h4>Dengan Rumus:</h4>
+                        <img src="foto_permutasi/sama.png" style="width: 50%; display: block; margin-left: 5%; margin-right: 0;">
+
+                        <h4>Keterangan:</h4>
+                        <ul>
+                            <li>n = jumlah total unsur</li>
+                            <li>r₁, r₂, ..., rₘ = jumlah masing-masing unsur yang sama</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 45%;" >
+                        <h4>Contoh:</h4>
+                        <p>Berapa banyak cara menyusun huruf dalam kata "MAMA"?</p>
+                        <h4>Jawab:</h4>
+                        <ul>
+                            <li>P = n! : (r₁! × r₂!)</li>
+                            <li>n = 4</li>
+                            <li>r₁ = 2 (banyak huruf M)</li>
+                            <li>r₂ = 2 (banyak huruf A)</li>
+                        </ul>
+                        
+                        <p>P = 4! : (2! × 2!)</p>
+                        <p>= 4 x 3 x 2 x 1 : (2 x 1 x 2 x 1)</p>
+                        <p>= 24 : 4</p>
+                        <p>= 6
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="hero">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <h3 style="position: relative; top: 10px;">4.Permutasi Siklis (melingkar)</h3>
+                        <p>Permutasi siklis atau permutasi melingkar adalah cara menyusun n unsur dalam bentuk lingkaran, 
+                            di mana urutan tetap diperhatikan tetapi posisi awal tidak dihitung sebagai berbeda.</p>
+                        <h4>Dengan Rumus:</h4>
+                        <img src="foto_permutasi/siklis.png" style="width: 40%; display: block; margin-left: 5%; margin-right: 0;">
+                        <h4>keterangan:</h4>
+                        <ul>
+                            <li>n = jumlah total unsur</li>
+                            <li>(n-1)! digunakan karena dalam susunan melingkar, 
+                             satu unsur dianggap tetap, sedangkan sisanya disusun di sekelilingnya.</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 45%;">   
+                        <h4>Contoh:</h4>
+                        <p>Berapa banyak cara 5 orang dapat duduk melingkar?</p>
+                        <h4>Jawab:</h4>
+                        <ul>
+                            <li>P = (n - 1)!</li>
+                            <li> n = 5</li>
+                        </ul>
+                        <p>P = (5 - 1)! = 4! </p>
+                        <p>= 4 x 3 x 2 x 1 </p>
+                        <p>= 24</p>
+                    </div>
+                </div>
+
+            </div>
+            
+       
+
+        <!-- Soal -->
+        <div class="hero">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="width: 50%;">
+            <h1>Contoh Kasus Permutasi</h1>
+            <p>Kelas B Program Studi Sistem Informasi akan mengadakan pemilihan pengurus kelas yang terdiri dari 3 posisi, yaitu Ketua, Sekretaris, dan Bendahara. Terdapat 6 calon yang bersedia menjadi pengurus kelas, yaitu Budi, Faldi, Dynda, Zikra, Tia, dan Afri. Dalam pemilihan ini, setiap posisi hanya boleh diisi oleh satu orang, dan setiap calon hanya bisa menduduki satu posisi. Urutan pemilihan sangat diperhatikan karena menentukan siapa yang menjadi Ketua, Sekretaris, dan Bendahara.</p>
+              <div style="width: 35%;Margin-LEFT:10%;">
+                <img src="foto_permutasi/Image pemilihan pengurus kelas.png"
+                alt="Hero" width="60%">
+              </div>
+            
+             <p>Berdasarkan informasi tersebut, tentukan:
+              <ul>
+                  <p>a. Berapa banyak cara yang dapat dilakukan untuk menyusun kepengurusan kelas B tersebut dengan memilih 3 dari 6 orang sebagai Ketua, Sekretaris, dan Bendahara dengan urutan yang berbeda?</p>
+                  <p>b. Jika Budi yang terpilih menjadi Ketua, berapa banyak susunan kepengurusan yang mungkin untuk Sekretaris dan Bendahara?</p>
+              </ul>
+            </p>
+          </div>
+        </div>
+    
+        <!-- penyelesaian a -->
+         
+        <div style="width: 45%;">  
+        <div class="penyelesaian-a">
+              <h3>Penyelesaian:</h3>
+              <img src="foto_permutasi/3.jpg" width="300px" >
+              <p>Jadi, terdapat 120 cara untuk menyusun kepengurusan kelas B.</p>
+            </div>     
+        </div> 
+        
+        <!-- penyelesaian b -->
+     <div class="penyelesaian-b">
+      <div style="width: 1; margin-top: 100; padding: 50;">
+        <img src="foto_permutasi/4.jpg" width="300px">
+        <p>Jadi, jika Budi yang terpilih menjadi Ketua, ada 20 cara untuk menyusun posisi Sekretaris dan Bendahara.</p>
+     </div>
+    </nav>
+    <footer class="footer">
+        ©Copyright Kelompok Duwa
+    </footer>
+    </body>
+    </html>
