@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Bergerak</title>
+    <style>
+        .moving-image {
+            position: relative;
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+            .shaking-image {
+            position: relative;
+            animation: shake 0.5s infinite alternate;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: contents;width: 10px;">
+    <!-- <div class="container"> -->
+        <img src="path_to_your_image.jpg" alt="Gambar Bergerak" class="moving-image">
+    </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Math.svg/800px-Math.svg.png"  alt="gambar Bergerak" class="shaking-image">    
+    </div>
+    </body>
+
+
